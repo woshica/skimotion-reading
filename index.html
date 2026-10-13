@@ -3,67 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SkiMotion: combining video and ski-boot sensor data for technique review and instruction. An introduction and questions for discussion.">
+  <meta name="description" content="SkiMotion — Make every run count.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#152f40">
+  <meta name="theme-color" content="#101c26">
   <title>SkiMotion — Make every run count</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#reader">Skip to presentation</a>
-  <header class="site-header">
-    <a class="brand" href="#slide-1" aria-label="SkiMotion, first slide">SkiMotion<span class="brand-dot"></span></a>
-    <span class="header-description">Make every run count</span>
-    <a class="download" href="assets/SkiMotion_Reading_EN.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg><span>Download PDF</span></a>
-  </header>
-  <main id="reader" tabindex="-1">
-    <div class="reader-heading"><p id="section-label">01 / Overview</p><button class="text-button" id="fullscreen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg><span>Full screen</span></button></div>
-    <div id="stage" class="stage" aria-label="SkiMotion presentation">
-      <section class="slide" id="slide-1" aria-label="Slide 1 of 5: Overview">
+  <main id="reader" aria-label="SkiMotion presentation">
+    <div id="stage" class="stage">
+      <section class="slide" id="slide-1" aria-label="Slide 1 of 5: Overview" aria-describedby="slide-text">
         <img src="assets/slide-1.png" width="1600" height="900" alt="SkiMotion — Make every run count. A skier on a mountain slope at sunset." fetchpriority="high" draggable="false">
       </section>
-      <section class="slide" id="slide-2" aria-label="Slide 2 of 5: Combining video and motion data" hidden>
-        <img src="assets/slide-2.png" width="1600" height="900" alt="Combining video and motion data. Ski-boot sensors and a fixed camera beside the slope feed synchronized movement analysis, for skiers, instructors and ski resorts. Full text below." loading="lazy" draggable="false">
+      <section class="slide" id="slide-2" aria-label="Slide 2 of 5: Combining video and motion data" aria-describedby="slide-text" hidden>
+        <img src="assets/slide-2.png" width="1600" height="900" alt="Combining video and motion data. Ski-boot sensors and a fixed camera beside the slope feed synchronized movement analysis, for skiers, instructors and ski resorts." loading="lazy" draggable="false">
       </section>
       <section class="slide" id="slide-3" aria-label="Slide 3 of 5: Product experience video" hidden>
         <img src="assets/slide-3.png" width="1600" height="900" alt="Product experience video." loading="lazy" draggable="false">
         <div class="video-frame">
-          <video id="product-video" controls playsinline preload="none" poster="assets/video-poster.png" aria-label="SkiMotion product experience video, in English, 2 minutes 11 seconds">
+          <video id="product-video" controls playsinline preload="none" poster="assets/video-poster.png" aria-label="SkiMotion product experience video in English">
             <source src="assets/product-video-en.mp4" type="video/mp4">
-            Your browser cannot play this video. <a href="assets/product-video-en.mp4">Download the video</a> to watch it.
+            <a href="assets/product-video-en.mp4">Open the video</a>.
           </video>
-          <button class="play-overlay" id="play-video" type="button" aria-label="Play product experience video"><span class="play-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg></span><span class="play-caption">Watch the experience <span>2:11</span></span></button>
+          <button class="play-overlay" id="play-video" type="button" aria-label="Play video"><span class="play-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg></span></button>
+          <p id="video-error" class="video-error" hidden><a href="assets/product-video-en.mp4">Open the video</a></p>
         </div>
       </section>
-      <section class="slide" id="slide-4" aria-label="Slide 4 of 5: Your experience and insights" hidden>
-        <img src="assets/slide-4.png" width="1600" height="900" alt="Your experience and insights: six discussion questions in two columns, Product and market, and Teaching and instructors. Full questions below." loading="lazy" draggable="false">
+      <section class="slide" id="slide-4" aria-label="Slide 4 of 5: Your experience and insights" aria-describedby="slide-text" hidden>
+        <img src="assets/slide-4.png" width="1600" height="900" alt="Your experience and insights: six questions in two columns, Product and market, and Teaching and instructors." loading="lazy" draggable="false">
       </section>
-      <section class="slide" id="slide-5" aria-label="Slide 5 of 5: Thank you for your time" hidden>
+      <section class="slide" id="slide-5" aria-label="Slide 5 of 5: Thank you for your time" aria-describedby="slide-text" hidden>
         <img src="assets/slide-5.png" width="1600" height="900" alt="Thank you for your time. Your experience will help us assess product value and guide our pilot plans." loading="lazy" draggable="false">
       </section>
-      <nav class="fullscreen-controls" aria-label="Full screen presentation controls"><button id="fullscreen-previous" type="button" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button><span id="fullscreen-count">1 / 5</span><button id="fullscreen-next" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button><button id="exit-fullscreen" type="button">Exit full screen</button></nav>
     </div>
-    <nav class="navigation" aria-label="Presentation navigation">
-      <button id="previous" class="arrow-button" type="button" aria-label="Previous slide" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
-      <div class="slide-links">
-        <button data-slide="0" aria-label="Slide 1: Overview" aria-current="step"><span class="nav-dot"></span><span class="nav-label">Overview</span></button>
-        <button data-slide="1" aria-label="Slide 2: How it works"><span class="nav-dot"></span><span class="nav-label">How it works</span></button>
-        <button data-slide="2" aria-label="Slide 3: Watch video"><span class="nav-dot"></span><span class="nav-label">Watch video</span></button>
-        <button data-slide="3" aria-label="Slide 4: Your insights"><span class="nav-dot"></span><span class="nav-label">Your insights</span></button>
-        <button data-slide="4" aria-label="Slide 5: Thank you"><span class="nav-dot"></span><span class="nav-label">Thank you</span></button>
-      </div>
-      <button id="next" class="arrow-button" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+    <nav class="controls" aria-label="Presentation controls">
+      <button id="previous" type="button" aria-label="Previous slide" title="Previous slide" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+      <button id="next" type="button" aria-label="Next slide" title="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+      <button id="fullscreen" type="button" aria-label="Full screen" title="Full screen"><svg class="enter-fullscreen" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg><svg class="exit-fullscreen" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h5V4m6 0v5h5M9 20v-5H4m16 0h-5v5"/></svg></button>
     </nav>
-    <div class="reader-meta"><span class="keyboard-hint">Use ← → to browse</span><span class="touch-hint">Swipe to change slides</span><span id="page-count" aria-live="polite" aria-atomic="true">Slide 1 of 5</span></div>
-    <details id="read-text" class="read-text">
-      <summary><span>Read slide text</span><span class="expand-mark" aria-hidden="true">+</span></summary>
-      <div class="text-content" id="slide-text"></div>
-    </details>
-    <p id="video-error" class="video-error" hidden>The video could not load. <a href="assets/product-video-en.mp4">Open or download the video</a>.</p>
-    <noscript><div class="no-script"><p>JavaScript is needed to turn the pages. You can read the full presentation or watch the video here:</p><a href="assets/SkiMotion_Reading_EN.pdf">Read the PDF</a> · <a href="assets/product-video-en.mp4">Watch the video</a></div></noscript>
+    <div id="page-count" class="sr-only" aria-live="polite" aria-atomic="true">Slide 1 of 5</div>
+    <div id="slide-text" class="sr-only"></div>
+    <noscript><p class="no-script"><a href="assets/SkiMotion_Reading_EN.pdf">Open presentation</a></p></noscript>
   </main>
-  <footer>SkiMotion <span>·</span> English introduction</footer>
 </body>
 </html>
